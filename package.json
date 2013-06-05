@@ -6,7 +6,20 @@
   "scripts": {
     "test": "test/*.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jonezy/mini-api-client.git" 
+  },
+  "readmeFileName": "README.md",
   "author": "Chris Jones",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "0.31.1"
+  },
+
+  "devDependencies": {
+    "mocha":"",
+    "should":""
+  }
 }
