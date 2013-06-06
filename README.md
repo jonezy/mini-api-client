@@ -10,8 +10,8 @@
             lang: 'en'    
         };
         var client = miniapiclient(opts);
-        client.get({type:'vehicles'}); // returns all vehicles from v2/vehicles
-        client.get({type:'vehicles',id:'1310'}) // returns v2/vehicles/1310
+        client.get({endPoint:'vehicles'}); // returns all vehicles from v2/vehicles
+        client.get({endPoint:'vehicles',id:'1310'}) // returns v2/vehicles/1310
 
 ## Version 0.0.0
 
