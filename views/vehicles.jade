@@ -5,6 +5,6 @@ block content
 
   #content
     ul.unstyled
-      for m in models
+      for v in vehicles
         li 
-          a(href='/vehicles/#{m.Ecode}') #{m.Name}
+          a(href='/vehicle/#{v.CACode}') #{v.Name}
