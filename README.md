@@ -15,9 +15,9 @@
 
 ## Version 0.0.0
 
-- Use express to build a web page where you can click to load various api
-endpoints.
-- Get a feel for how http.request works
+- ~~Use express to build a web page where you can click to load various api
+endpoints.~~
+- ~~Get a feel for how http.request works~~
 
 ## Version 0.0.1
 
