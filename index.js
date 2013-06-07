@@ -15,8 +15,15 @@ var client = new MiniApiClient({ apiKey: apiKey });
 
 app.get("/vehicles/:ecode", function(req, res) {
   var ecode = req.params.ecode;
-  client.get({"endPoint":"vehiclesByModel", "id":"R56"}, function(data) {
+  client.get({"endPoint":"vehiclesByModel", "id":ecode}, function(data) {
     res.render("vehicles", { title: 'Vehicles', vehicles:data.Vehicles });
+  });
+});
+
+app.get("/vehicle/:cacode", function(req, res) {
+  var cacode = req.params.cacode;
+  client.get({"endPoint":"vehicle", "id":cacode}, function(data) {
+    res.render("vehicle", { title: data.Name, vehicles:data });
   });
 });
 
