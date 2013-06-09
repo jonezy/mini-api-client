@@ -67,5 +67,17 @@ describe("MiniApiClient", function() {
       });
     });
   });
+
+  describe("/packages", function() {
+    it('should return a collection of objects', function(done) {
+
+      var res = client.get({"endPoint":"packages"}, function(data) {
+        assert(data.length, ">1", "expected more than 1 object");
+        done();
+
+      });
+    });
+
+  });
 });
 
