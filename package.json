@@ -2,7 +2,7 @@
   "name": "mini-api-client",
   "version": "0.0.0",
   "description": "client library to access api.buildmymini.ca",
-  "main": "index.js",
+  "main": "lib/mini-api-client.js",
   "scripts": {
     "test": "test/*.js"
   },
