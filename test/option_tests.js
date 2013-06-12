@@ -9,10 +9,16 @@ var testData = {
   "optionId": "205"
 };
 
-beforeEach(function() {
-  client = new MiniApiClient({"apiKey":apiKey});
-});
+var opts = {
+  "apiKey":"OTk5OTk5OTk5OQ==",
+  "apiEndPoint":"staging-api.buildmymini.ca",
+  "apiVersion": "v2",
+  "apiLanguage": "en"
+};
 
+beforeEach(function() {
+  client = new MiniApiClient(opts);
+});
 
 describe("MiniApiClient options endpoints", function() {
   var option = nock('http://staging-api.buildmymini.ca:80')

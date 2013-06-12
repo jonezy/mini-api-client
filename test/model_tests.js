@@ -9,8 +9,15 @@ var testData = {
   "vehicleId": "1310"
 };
 
+var opts = {
+  "apiKey":"OTk5OTk5OTk5OQ==",
+  "apiEndPoint":"staging-api.buildmymini.ca",
+  "apiVersion": "v2",
+  "apiLanguage": "en"
+};
+
 beforeEach(function() {
-  client = new MiniApiClient({"apiKey":apiKey});
+  client = new MiniApiClient(opts);
 });
 
 describe("MiniApiClient model endpoints", function() {

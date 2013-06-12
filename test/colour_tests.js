@@ -2,7 +2,6 @@
 var assert = require('assert');
 var MiniApiClient = require('../lib/mini-api-client');
 var nock = require('nock');
-var apiKey = "OTk5OTk5OTk5OQ==";
 var client;
 
 var testData = {
@@ -11,8 +10,15 @@ var testData = {
   "stripeId": "327"
 };
 
+var opts = {
+  "apiKey":"OTk5OTk5OTk5OQ==",
+  "apiEndPoint":"staging-api.buildmymini.ca",
+  "apiVersion": "v2",
+  "apiLanguage": "en"
+};
+
 beforeEach(function() {
-  client = new MiniApiClient({"apiKey":apiKey});
+  client = new MiniApiClient(opts);
 });
 
 describe("MiniApiClient colours endpoints", function() {
