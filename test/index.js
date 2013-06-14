@@ -3,6 +3,7 @@ var assert = require('assert');
 var opts = {
   "apiKey":"OTk5OTk5OTk5OQ==",
   "apiEndPoint":"staging-api.buildmymini.ca",
+  "apiEndPointPort":"80",
   "apiVersion": "v2",
   "apiLanguage": "en"
 };
@@ -30,6 +31,9 @@ describe("MiniApiClient Constructor", function() {
     });
     it("should have an api endpoint", function() {
       assert(client.options.apiEndPoint, opts.apiEndPoint,"expected client to have apiEndPoint " + opts.apiEndPoint);
+    });
+    it("should have an api endpoint port", function() {
+      assert(client.options.apiEndPointPort, opts.apiEndPointPort,"expected client to have apiEndPointPort " + opts.apiEndPointPort);
     });
     it("should have an api version", function() {
       assert(client.options.apiVersion, opts.apiVersion, "exected client to have apiVersion " +  opts.apiVersion);
